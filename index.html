@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>7680px Photography</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <meta name="description" content="7680px Photography — 高清摄影作品集" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>7680px Photography</h1>
+      <p class="tagline">超高分辨率摄影作品集 · 可替换为你的图片</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="gallery" class="gallery" aria-live="polite">
+      <!-- 图片由 assets/script.js 动态加载 -->
+    </section>
+  </main>
+
+  <!-- Lightbox / Modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lbClose" class="lb-close" aria-label="关闭">✕</button>
+    <img id="lbImage" alt="" />
+    <p id="lbCaption" class="lb-caption"></p>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">由 7680px Photography 提供 · 请将你的原始图片上传到 /photos 或在 photos.json 中修改 URL</div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
